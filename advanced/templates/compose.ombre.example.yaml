@@ -1,0 +1,14 @@
+# Optional standalone deployment; review current upstream docs first.
+# Upstream: https://github.com/P0luz/Ombre-Brain
+services:
+  memory:
+    image: p0luz/ombre-brain:${OMBRE_IMAGE_TAG:?Set a reviewed upstream version}
+    ports:
+      - "127.0.0.1:${MEMORY_HTTP_PORT:?Choose an unused local port}:8000"
+    volumes:
+      - type: bind
+        source: ${MEMORY_DATA_DIR:?Choose an existing private persistent directory}
+        target: /app/buckets
+        bind:
+          create_host_path: false
+    restart: "no"

@@ -1,0 +1,11 @@
+{
+  "memory_refs": [
+    "<exact-memory-id>"
+  ],
+  "fixed_memory_changes": [],
+  "snapshot": {
+    "path": ".memorykit-state/backups/<encrypted-snapshot>.tar.gz.gpg",
+    "sha256": "<sha256>",
+    "restore_verified": false
+  }
+}

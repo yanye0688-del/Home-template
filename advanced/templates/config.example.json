@@ -1,0 +1,61 @@
+{
+  "workspace_root": ".",
+  "state_dir": ".memorykit-state",
+  "files": {
+    "identity": "CLAUDE.md",
+    "baton": "OB/接力棒.md",
+    "long_term": "OB/常备.md"
+  },
+  "last_words_file": "OB/last-words.txt",
+  "adapters": {
+    "surface": [
+      "python3",
+      "advanced/scripts/export-adapter.py",
+      "--exports",
+      "private-exports"
+    ],
+    "letters": [
+      "python3",
+      "advanced/scripts/export-adapter.py",
+      "--exports",
+      "private-exports"
+    ],
+    "self": [
+      "python3",
+      "advanced/scripts/export-adapter.py",
+      "--exports",
+      "private-exports"
+    ],
+    "recall": [
+      "python3",
+      "advanced/scripts/export-adapter.py",
+      "--exports",
+      "private-exports"
+    ],
+    "pins": [
+      "python3",
+      "advanced/scripts/export-adapter.py",
+      "--exports",
+      "private-exports"
+    ]
+  },
+  "bloat_paths": [
+    "OB"
+  ],
+  "backup": {
+    "sources": [
+      "CLAUDE.md",
+      "OB/接力棒.md",
+      "OB/常备.md"
+    ],
+    "repository": "<owner>/<private-backup-repository>",
+    "branch": "encrypted-backups",
+    "token_env": "GITHUB_TOKEN"
+  },
+  "compact_thresholds": [
+    65,
+    80
+  ],
+  "bloat_warning_bytes": 65536,
+  "bloat_total_warning_bytes": 1048576
+}

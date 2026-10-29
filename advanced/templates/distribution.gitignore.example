@@ -1,0 +1,10 @@
+# Merge deliberately; never overwrite an existing ignore file.
+.env
+*.key
+*.pem
+*.token
+runtime-config.json
+.memorykit-state/
+private-exports/
+__pycache__/
+*.pyc

@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/advanced/scripts/hook-bridge.py\" --config \"$CLAUDE_PROJECT_DIR/runtime-config.json\"",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/advanced/scripts/hook-bridge.py\" --config \"$CLAUDE_PROJECT_DIR/runtime-config.json\"",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}
