@@ -95,7 +95,6 @@ advanced/scripts/handoff.py retire --session old-session --nonce NONCE_FROM_PREP
 ## 第三方项目
 
 只连接或指向上游，不打包其实现、数据和依赖，不暗示上游作者认可此模板：
-- [Ombre Brain](https://github.com/P0luz/Ombre-Brain)：记忆后端，遵从其许可证与当前部署文档。
-- [心潮动态心智](https://github.com/tianyupaipai-cmd/xinchao-dynamic-mind)：独立动态状态层，见 [可选接法](optional-backends.md)。
+- [Ombre Brain](https://github.com/P0luz/Ombre-Brain)：记忆后端，遵从其许可证与当前部署文档，见 [可选接法](optional-backends.md)。
 
 原仓库根目录基础版保持原样。这里没有任何人的专有服务、手机控制、私人资料或现成账号配置。
